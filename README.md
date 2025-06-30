@@ -95,4 +95,5 @@ python spark_consumer.py
 * Learn how to consume and process Kafka messages using Spark
 * Persist streaming data to a high-throughput NoSQL database (Cassandra)
 * Use Airflow to manage end-to-end workflow automation
+* Add unit test cases to check for validation of the whole workflow.
 ```
