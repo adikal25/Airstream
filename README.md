@@ -2,15 +2,12 @@
 
 ```markdown
 # Airstream
-
 A real-time data streaming pipeline that simulates a production-grade architecture using Apache Kafka, Apache Spark, Apache Cassandra, and orchestrated by Airflow. It ingests data from a test API, processes it in real time, and stores it in a distributed NoSQL database.
 
 ---
 
-## 🚀 Overview
-
+## Overview
 This project demonstrates how to build an end-to-end real-time data pipeline using a modern open-source stack. Although the data source is a test API, the pipeline architecture is built to reflect real-world scenarios involving data ingestion, streaming, and storage across distributed systems.
-
 ---
 
 ## 🛠️ Technologies Used
@@ -24,22 +21,7 @@ This project demonstrates how to build an end-to-end real-time data pipeline usi
 - **docker** - for orchestrating and running instances of all the tools used
 
 ---
-
-## 🔄 Data Flow
-
-```
-
-\[Test API]
-↓
-\[Airflow DAG → PostgreSQL (optional)]
-↓
-\[Kafka Producer → Kafka Broker (Zookeeper)]
-↓
-\[Spark Consumer (Structured Streaming)]
-↓
-\[Cassandra]
-
-```
+## Flow of the project
 
 - Data is fetched from a test API and optionally stored in PostgreSQL.
 - Kafka producer (triggered by Airflow) sends formatted data to a Kafka topic.
@@ -48,7 +30,7 @@ This project demonstrates how to build an end-to-end real-time data pipeline usi
 ---
 
 
-## 🧪 Sample Message Format (Kafka Payload)
+##  Sample Message Format (Kafka Payload)
 
 ```json
 {
@@ -107,7 +89,7 @@ python spark_consumer.py
 
 ---
 
-## 🎯 Goals of the Project
+## Outcomes of the Project
 
 * Practice integrating major components of a real-time data pipeline
 * Learn how to consume and process Kafka messages using Spark
