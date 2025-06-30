@@ -1,0 +1,53 @@
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Airflow and Python virtual environments
+airflow-venv/
+*.venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+
+# PySpark temporary files
+.metastore_db/
+derby.log
+
+# Airflow logs and SQLite DB
+logs/
+airflow.db
+unittests.cfg
+webserver_config.py
+
+# Docker-related
+*.pid
+*.tar
+*.img
+docker-compose.override.yml
+
+# Shell script backups
+*.sh.save
+*.swp
+
+# VS Code settings
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Data files (adjust based on content)
+data/
+
+# Jupyter and IPython
+.ipynb_checkpoints/
+.profile
+
+# Security
+*.key
+*.pem
+.env
+.env.*
