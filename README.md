@@ -12,13 +12,13 @@ This project demonstrates how to build an end-to-end real-time data pipeline usi
 
 ## 🛠️ Technologies Used
 
-- **Airflow** – Orchestrates the ingestion of data from an API
-- **Kafka** – Acts as a real-time message broker
-- **Spark Structured Streaming** – Processes Kafka messages in real time
-- **Cassandra** – Stores processed data in a scalable, distributed manner
-- **PostgreSQL** – Optional staging layer before Kafka
-- **Python** – Used across ingestion, processing, and orchestration logic
-- **docker** - for orchestrating and running instances of all the tools used
+- Airflow – Orchestrates the ingestion of data from an API
+- Kafka – Acts as a real-time message broker
+- Spark Structured Streaming – Processes Kafka messages in real time
+- Cassandra – Stores processed data in a scalable, distributed manner
+- PostgreSQL – Optional staging layer before Kafka
+- Python – Used across ingestion, processing, and orchestration logic
+- docker - for orchestrating and running instances of all the tools used
 
 ---
 ## Flow of the project
@@ -55,8 +55,7 @@ This project demonstrates how to build an end-to-end real-time data pipeline usi
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/streampulse.git
-cd streampulse
+git clone repo
 ```
 
 ### 2. Start services using Docker
